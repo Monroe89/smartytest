@@ -183,10 +183,15 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 30.268328, lng: -97.735594},
+          center: {lat: 30.268, lng: -97.735},
           zoom: 8
         });
       }
+      var ctaLayer = new google.maps.KmlLayer({
+         url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
+         map: map
+       });
+     }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyPPG5iVT8ZJ1jvGDBfljgTX64HOVgz0&callback=initMap"
     async defer></script>
