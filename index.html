@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
+        <script>jQuery.LiveAddress({
+            key: "18045844531301777",
+            debug: false,
+            target: "US",
+            addresses: [{
+                address1: '#inputStreet',
+                locality: '#inputCity',
+                administrative_area: '#inputState',
+                postal_code: '#inputZip',
+            }]
+        });
+        </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,19 +163,6 @@
         <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     
         <!--Additional inline script if necessary below-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
-<script>jQuery.LiveAddress({
-	key: "18045844531301777",
-	debug: false,
-	target: "US",
-	addresses: [{
-		address1: '#inputStreet',
-		locality: '#inputCity',
-		administrative_area: '#inputState',
-		postal_code: '#inputZip',
-	}]
-});
-</script>
+
 </body>
 </html>
