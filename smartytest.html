@@ -150,7 +150,19 @@
         <script src="https://d79i1fxsrar4t.cloudfront.net/sdk/1.0.0/smartystreets-sdk-1.0.0.min.js"></script>
     
         <!--Additional inline script if necessary below-->
-        <script>
-        </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
+<script>var liveaddress = $.LiveAddress({
+	key: "YOUR_WEBSITE_KEY_HERE",
+	debug: true,
+	target: "US|INTERNATIONAL",
+	addresses: [{
+		address1: '#inputStreet',
+		locality: '#inputCity',
+		administrative_area: '#inputState',
+		postal_code: '#inputZip',
+	}]
+});
+</script>
 </body>
 </html>
